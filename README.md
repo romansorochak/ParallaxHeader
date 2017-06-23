@@ -63,4 +63,4 @@ To add parallax header to scroll view (table view) you need just create view and
 
 ## License
 
-Reusable is released under the MIT license. See LICENSE for details.
+Reusable is released under the MIT license. See [LICENSE](https://github.com/romansorochak/ParallaxHeader/blob/master/LICENSE) for details.
