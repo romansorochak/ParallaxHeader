@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name         = "ParallaxHeader"
   s.version      = "1.0.0"
   s.summary      = "Simple way to add parallax header to scrollView/tableView"
-  s.description  = "The ParallaxHeader allows to add parallax header to scrollView/tableView within UIScrollViewExtension"
+  s.description  = "The ParallaxHeader allows to add parallax header to UIScrollView and it's subclasses within UIScrollView extension"
   s.homepage     = "https://github.com/romansorochak"
 
   s.license      = "MIT"
@@ -17,5 +17,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/romansorochak/ParallaxHeader.git", :tag => "1.0.0" }
 
   s.source_files  = "ParallaxHeader", "ParallaxHeader/**/*.{h,m}"
+
+
+  echo "2.3" > .swift-version
 
 end
