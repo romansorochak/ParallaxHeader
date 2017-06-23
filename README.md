@@ -1,6 +1,8 @@
 # ParallaxHeader
 Simple way to add parallax header to UIScrollView or it's subclasses.
 
+![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo.gif)
+
 ## Contents
 - [Requirements](#requirements)
 - [Installation](#installation)
