@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.ios.deployment_target = "9.0"
 
-  s.source       = { :git => "http://EXAMPLE/ParallaxHeader.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/romansorochak/ParallaxHeader.git", :tag => "1.0.0" }
 
   s.source_files  = "ParallaxHeader", "ParallaxHeader/**/*.{h,m}"
 
