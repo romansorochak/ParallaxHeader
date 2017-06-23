@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 
   s.source_files  = "ParallaxHeader", "ParallaxHeader/**/*.{h,m}"
 
-
-  echo "2.3" > .swift-version
+  s.swift-version = "3.0"
 
 end
