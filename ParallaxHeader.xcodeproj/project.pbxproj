@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B547DFAF1EFD3383004D9D51 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B547DFAD1EFD3383004D9D51 /* LICENSE */; };
-		B547DFB01EFD3383004D9D51 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B547DFAE1EFD3383004D9D51 /* README.md */; };
 		B5CCB7971EFD0E5500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
 		B5CCB79C1EFD0E5500194CFB /* ParallaxHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB79B1EFD0E5500194CFB /* ParallaxHeaderTests.swift */; };
 		B5CCB79E1EFD0E5500194CFB /* ParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,7 +21,6 @@
 		B5CCB7D11EFD100100194CFB /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB7D01EFD100100194CFB /* UIScrollView+ParallaxHeader.swift */; };
 		B5CCB7D21EFD109500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
 		B5CCB7D31EFD109500194CFB /* ParallaxHeader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5CCB7D91EFD304500194CFB /* ParallaxHeader.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B5CCB7D81EFD304500194CFB /* ParallaxHeader.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +62,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B547DFAD1EFD3383004D9D51 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B547DFAE1EFD3383004D9D51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallaxHeader.h; sourceTree = "<group>"; };
 		B5CCB7911EFD0E5400194CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +81,6 @@
 		B5CCB7CC1EFD0FA400194CFB /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
 		B5CCB7CE1EFD0FB400194CFB /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
 		B5CCB7D01EFD100100194CFB /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
-		B5CCB7D81EFD304500194CFB /* ParallaxHeader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParallaxHeader.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +146,6 @@
 				B5CCB7CE1EFD0FB400194CFB /* ParallaxHeaderMode.swift */,
 				B5CCB7CC1EFD0FA400194CFB /* ParallaxHeader.swift */,
 				B5CCB7D01EFD100100194CFB /* UIScrollView+ParallaxHeader.swift */,
-				B5CCB7D71EFD303100194CFB /* Metadata */,
 				B5CCB7CB1EFD0F6800194CFB /* Supporting Files */,
 			);
 			path = ParallaxHeader;
@@ -195,16 +188,6 @@
 				B5CCB7911EFD0E5400194CFB /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B5CCB7D71EFD303100194CFB /* Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				B547DFAD1EFD3383004D9D51 /* LICENSE */,
-				B547DFAE1EFD3383004D9D51 /* README.md */,
-				B5CCB7D81EFD304500194CFB /* ParallaxHeader.podspec */,
-			);
-			name = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,8 +337,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B547DFAF1EFD3383004D9D51 /* LICENSE in Resources */,
-				B5CCB7D91EFD304500194CFB /* ParallaxHeader.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +373,6 @@
 			files = (
 				B5CCB7D11EFD100100194CFB /* UIScrollView+ParallaxHeader.swift in Sources */,
 				B5CCB7CF1EFD0FB400194CFB /* ParallaxHeaderMode.swift in Sources */,
-				B547DFB01EFD3383004D9D51 /* README.md in Sources */,
 				B5CCB7CD1EFD0FA400194CFB /* ParallaxHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
