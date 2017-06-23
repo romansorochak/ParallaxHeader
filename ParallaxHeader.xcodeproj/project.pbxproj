@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54E1B8B1EFD5AE700B1DDCE /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */; };
 		B5CCB7971EFD0E5500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
 		B5CCB79C1EFD0E5500194CFB /* ParallaxHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB79B1EFD0E5500194CFB /* ParallaxHeaderTests.swift */; };
 		B5CCB79E1EFD0E5500194CFB /* ParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
 		B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallaxHeader.h; sourceTree = "<group>"; };
 		B5CCB7911EFD0E5400194CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +119,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B54E1B871EFD5A8600B1DDCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */,
+				B5CCB7B41EFD0F2300194CFB /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B54E1B881EFD5A9000B1DDCE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				B5CCB7B91EFD0F2300194CFB /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		B54E1B891EFD5A9C00B1DDCE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B5CCB7B11EFD0F2300194CFB /* Main.storyboard */,
+				B5CCB7B61EFD0F2300194CFB /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		B5CCB7831EFD0E5400194CFB = {
 			isa = PBXGroup;
 			children = (
@@ -165,10 +193,9 @@
 			children = (
 				B5CCB7AD1EFD0F2300194CFB /* AppDelegate.swift */,
 				B5CCB7AF1EFD0F2300194CFB /* ViewController.swift */,
-				B5CCB7B11EFD0F2300194CFB /* Main.storyboard */,
-				B5CCB7B41EFD0F2300194CFB /* Assets.xcassets */,
-				B5CCB7B61EFD0F2300194CFB /* LaunchScreen.storyboard */,
-				B5CCB7B91EFD0F2300194CFB /* Info.plist */,
+				B54E1B891EFD5A9C00B1DDCE /* UI */,
+				B54E1B871EFD5A8600B1DDCE /* Resources */,
+				B54E1B881EFD5A9000B1DDCE /* Supporting files */,
 			);
 			path = Exmple;
 			sourceTree = "<group>";
@@ -352,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CCB7B81EFD0F2300194CFB /* LaunchScreen.storyboard in Resources */,
+				B54E1B8B1EFD5AE700B1DDCE /* Demo.gif in Resources */,
 				B5CCB7B51EFD0F2300194CFB /* Assets.xcassets in Resources */,
 				B5CCB7B31EFD0F2300194CFB /* Main.storyboard in Resources */,
 			);
