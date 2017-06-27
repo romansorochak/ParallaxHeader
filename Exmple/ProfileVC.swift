@@ -10,7 +10,7 @@ import UIKit
 import ParallaxHeader
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     weak var headerImageView: UIView?
@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     private func setupParallaxHeader() {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "1")
+        imageView.image = UIImage(named: "profile")
         imageView.contentMode = .scaleAspectFill
         
         headerImageView = imageView
