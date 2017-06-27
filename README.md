@@ -51,6 +51,7 @@ $ pod install
 
 To add parallax header to scroll view (table view) you need just create view and set it to your scroll view (table view).
 
+## Use case - one image view
 ```swift
   //create view as header view    
   let imageView = UIImageView()
@@ -61,6 +62,31 @@ To add parallax header to scroll view (table view) you need just create view and
   tableView.parallaxHeader.height = 400
   tableView.parallaxHeader.minimumHeight = 0
   tableView.parallaxHeader.mode = .topFill
+```
+
+## Use case - slider of images
+```swift
+let parallaxHeight: CGFloat = view.frame.height - 64 - 49 - sliderHeight
+let layout = UICollectionViewFlowLayout()
+layout.scrollDirection = .horizontal
+collectionParallaxView = UICollectionView(
+    frame: CGRect(x: 0, y: 0, width: view.frame.width, height: parallaxHeight),
+    collectionViewLayout: layout
+)
+collectionParallaxView.isPagingEnabled = true
+collectionParallaxView.showsHorizontalScrollIndicator = false
+collectionParallaxView.backgroundColor = UIColor.white
+collectionParallaxView.delegate = self
+collectionParallaxView.dataSource = self
+
+//adding view as parallax header to table view is straightforward
+tableView.parallaxHeader.view = collectionParallaxView
+tableView.parallaxHeader.height = parallaxHeight
+tableView.parallaxHeader.minimumHeight = 0
+tableView.parallaxHeader.mode = .centerFill
+tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
+    print(parallaxHeader.progress)
+}
 ```
 
 ## License
