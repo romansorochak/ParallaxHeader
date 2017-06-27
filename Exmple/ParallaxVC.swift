@@ -1,17 +1,16 @@
 //
-//  ViewController.swift
-//  Exmple
+//  ParallaxVC.swift
+//  ParallaxHeader
 //
-//  Created by Roman Sorochak on 6/23/17.
+//  Created by Roman Sorochak on 6/27/17.
 //  Copyright © 2017 MagicLab. All rights reserved.
 //
 
 import UIKit
 import ParallaxHeader
-import SnapKit
 
 
-class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     weak var headerImageView: UIView?
@@ -31,28 +30,14 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         imageView.image = UIImage(named: "profile")
         imageView.contentMode = .scaleAspectFill
         
-        imageView.blurView.setup(style: UIBlurEffectStyle.dark, alpha: 1).enable()
-        
         headerImageView = imageView
         
         tableView.parallaxHeader.view = imageView
         tableView.parallaxHeader.height = 400
-        tableView.parallaxHeader.minimumHeight = 40
+        tableView.parallaxHeader.minimumHeight = 0
         tableView.parallaxHeader.mode = .centerFill
         tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
             print(parallaxHeader.progress)
-            parallaxHeader.view.blurView.alpha = 1 - parallaxHeader.progress
-        }
-        
-        // Label for vibrant text
-        let vibrantLabel = UILabel()
-        vibrantLabel.text = "Vibrant"
-        vibrantLabel.font = UIFont.systemFont(ofSize: 40.0)
-        vibrantLabel.sizeToFit()
-        vibrantLabel.textAlignment = .center
-        imageView.blurView.vibrancyContentView?.addSubview(vibrantLabel)
-        vibrantLabel.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
         }
     }
     
@@ -96,4 +81,5 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 }
+
 

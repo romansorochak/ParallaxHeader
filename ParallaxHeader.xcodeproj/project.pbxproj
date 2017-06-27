@@ -22,7 +22,7 @@
 		B5CCB79C1EFD0E5500194CFB /* ParallaxHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB79B1EFD0E5500194CFB /* ParallaxHeaderTests.swift */; };
 		B5CCB79E1EFD0E5500194CFB /* ParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CCB7AE1EFD0F2300194CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB7AD1EFD0F2300194CFB /* AppDelegate.swift */; };
-		B5CCB7B01EFD0F2300194CFB /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB7AF1EFD0F2300194CFB /* ProfileVC.swift */; };
+		B5CCB7B01EFD0F2300194CFB /* BlurParallaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB7AF1EFD0F2300194CFB /* BlurParallaxVC.swift */; };
 		B5CCB7B31EFD0F2300194CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CCB7B11EFD0F2300194CFB /* Main.storyboard */; };
 		B5CCB7B51EFD0F2300194CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CCB7B41EFD0F2300194CFB /* Assets.xcassets */; };
 		B5CCB7B81EFD0F2300194CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CCB7B61EFD0F2300194CFB /* LaunchScreen.storyboard */; };
@@ -33,6 +33,8 @@
 		B5CCB7D21EFD109500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
 		B5CCB7D31EFD109500194CFB /* ParallaxHeader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5DB06DE1F028E4D00DD1D43 /* UIView+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB06DD1F028E4D00DD1D43 /* UIView+Blur.swift */; };
+		B5DB07021F02D1C900DD1D43 /* Demo_with_blur.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5DB07011F02D1C900DD1D43 /* Demo_with_blur.gif */; };
+		B5DB07041F02D20F00DD1D43 /* ParallaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB07031F02D20F00DD1D43 /* ParallaxVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +97,7 @@
 		B5CCB79D1EFD0E5500194CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CCB7AB1EFD0F2300194CFB /* Exmple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exmple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CCB7AD1EFD0F2300194CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5CCB7AF1EFD0F2300194CFB /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B5CCB7AF1EFD0F2300194CFB /* BlurParallaxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurParallaxVC.swift; sourceTree = "<group>"; };
 		B5CCB7B21EFD0F2300194CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CCB7B41EFD0F2300194CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5CCB7B71EFD0F2300194CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,8 @@
 		B5CCB7CE1EFD0FB400194CFB /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
 		B5CCB7D01EFD100100194CFB /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
 		B5DB06DD1F028E4D00DD1D43 /* UIView+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Blur.swift"; sourceTree = "<group>"; };
+		B5DB07011F02D1C900DD1D43 /* Demo_with_blur.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo_with_blur.gif; sourceTree = "<group>"; };
+		B5DB07031F02D20F00DD1D43 /* ParallaxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,8 @@
 		B50695831F02662700078D26 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				B5CCB7AF1EFD0F2300194CFB /* ProfileVC.swift */,
+				B5DB07031F02D20F00DD1D43 /* ParallaxVC.swift */,
+				B5CCB7AF1EFD0F2300194CFB /* BlurParallaxVC.swift */,
 				B50695841F02664100078D26 /* CollectionVC */,
 			);
 			name = VC;
@@ -203,6 +208,7 @@
 		B54E1B871EFD5A8600B1DDCE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B5DB07011F02D1C900DD1D43 /* Demo_with_blur.gif */,
 				B5485F961F0277870010D77C /* CollectionDemo.gif */,
 				B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */,
 				B5CCB7B41EFD0F2300194CFB /* Assets.xcassets */,
@@ -485,6 +491,7 @@
 			files = (
 				B5485F971F0277870010D77C /* CollectionDemo.gif in Resources */,
 				B5CCB7B81EFD0F2300194CFB /* LaunchScreen.storyboard in Resources */,
+				B5DB07021F02D1C900DD1D43 /* Demo_with_blur.gif in Resources */,
 				B5485F951F0270F70010D77C /* CollectionTableViewCell.xib in Resources */,
 				B54E1B8B1EFD5AE700B1DDCE /* Demo.gif in Resources */,
 				B506958D1F02686900078D26 /* ItemDetailedCell.xib in Resources */,
@@ -574,8 +581,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50695861F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift in Sources */,
+				B5DB07041F02D20F00DD1D43 /* ParallaxVC.swift in Sources */,
 				B50695881F0267D700078D26 /* ItemDetailedImagesDataSourse.swift in Sources */,
-				B5CCB7B01EFD0F2300194CFB /* ProfileVC.swift in Sources */,
+				B5CCB7B01EFD0F2300194CFB /* BlurParallaxVC.swift in Sources */,
 				B5CCB7AE1EFD0F2300194CFB /* AppDelegate.swift in Sources */,
 				B506958B1F02686000078D26 /* ItemDetailedCell.swift in Sources */,
 				B5DB06DE1F028E4D00DD1D43 /* UIView+Blur.swift in Sources */,
