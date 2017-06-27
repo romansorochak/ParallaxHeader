@@ -1,6 +1,8 @@
 # ParallaxHeader
 Simple way to add parallax header to UIScrollView or it's subclasses.
 
+![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo.gif)
+
 ## Contents
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -61,4 +63,4 @@ To add parallax header to scroll view (table view) you need just create view and
 
 ## License
 
-Reusable is released under the MIT license. See LICENSE for details.
+Reusable is released under the MIT license. See [LICENSE](https://github.com/romansorochak/ParallaxHeader/blob/master/LICENSE) for details.
