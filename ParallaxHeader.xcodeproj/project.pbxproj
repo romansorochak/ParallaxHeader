@@ -32,6 +32,7 @@
 		B5CCB7D11EFD100100194CFB /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB7D01EFD100100194CFB /* UIScrollView+ParallaxHeader.swift */; };
 		B5CCB7D21EFD109500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
 		B5CCB7D31EFD109500194CFB /* ParallaxHeader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5DB06DE1F028E4D00DD1D43 /* UIView+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB06DD1F028E4D00DD1D43 /* UIView+Blur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		B5CCB7CC1EFD0FA400194CFB /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
 		B5CCB7CE1EFD0FB400194CFB /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
 		B5CCB7D01EFD100100194CFB /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		B5DB06DD1F028E4D00DD1D43 /* UIView+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Blur.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B5485F8C1F0269D40010D77C /* UIAplication+RLT.swift */,
+				B5DB06DD1F028E4D00DD1D43 /* UIView+Blur.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				B5CCB7B01EFD0F2300194CFB /* ProfileVC.swift in Sources */,
 				B5CCB7AE1EFD0F2300194CFB /* AppDelegate.swift in Sources */,
 				B506958B1F02686000078D26 /* ItemDetailedCell.swift in Sources */,
+				B5DB06DE1F028E4D00DD1D43 /* UIView+Blur.swift in Sources */,
 				B50695821F02653C00078D26 /* CollectionVC.swift in Sources */,
 				B5485F8D1F0269D40010D77C /* UIAplication+RLT.swift in Sources */,
 				B5485F941F0270F70010D77C /* CollectionTableViewCell.swift in Sources */,
