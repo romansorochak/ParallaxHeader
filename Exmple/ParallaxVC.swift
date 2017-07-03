@@ -34,7 +34,7 @@ class ParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.parallaxHeader.view = imageView
         tableView.parallaxHeader.height = 400
         tableView.parallaxHeader.minimumHeight = 0
-        tableView.parallaxHeader.mode = .centerFill
+        tableView.parallaxHeader.mode = .topFill
         tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
             print(parallaxHeader.progress)
         }
