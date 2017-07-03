@@ -1,9 +1,9 @@
 # ParallaxHeader
 Simple way to add parallax header to UIScrollView or it's subclasses.
 
-|             One image view      |           Slider with images              |     Image view with blur effect           |
-|---------------------------------|-------------------------------------------|-------------------------------------------|
-|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/CollectionDemo.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo_with_blur.gif)|
+|        One image view      |     Slider with images          |     Blur vibrant text        |  Blur round icon   |
+|----------------------------|---------------------------------|------------------------------|--------------------|
+|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/CollectionDemo.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo_with_blur.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo_blur_icon.gif)|
 
 ## Contents
 - [Requirements](#requirements)
@@ -88,6 +88,82 @@ tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
     print(parallaxHeader.progress)
 }
 ```
+
+## Use case - Blur vibrant text
+```swift
+let imageView = UIImageView()
+imageView.image = UIImage(named: "profile")
+imageView.contentMode = .scaleAspectFill
+        
+//setup blur vibrant view
+imageView.blurView.setup(style: UIBlurEffectStyle.dark, alpha: 1).enable()
+        
+headerImageView = imageView
+        
+tableView.parallaxHeader.view = imageView
+tableView.parallaxHeader.height = 400
+tableView.parallaxHeader.minimumHeight = 40
+tableView.parallaxHeader.mode = .centerFill
+tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
+    //update alpha of blur view on top of image view 
+    parallaxHeader.view.blurView.alpha = 1 - parallaxHeader.progress
+}
+        
+// Label for vibrant text
+let vibrantLabel = UILabel()
+vibrantLabel.text = "Vibrant"
+vibrantLabel.font = UIFont.systemFont(ofSize: 40.0)
+vibrantLabel.sizeToFit()
+vibrantLabel.textAlignment = .center
+imageView.blurView.vibrancyContentView?.addSubview(vibrantLabel)
+//add constraints using SnapKit library
+vibrantLabel.snp.makeConstraints { make in
+    make.edges.equalToSuperview()
+}
+```
+
+## Use case - Blur round icon
+```swift
+let image = UIImage(named: "profile")
+        
+let imageView = UIImageView()
+imageView.image = image
+imageView.contentMode = .scaleAspectFill
+parallaxHeaderView = imageView
+        
+//setup bur view
+imageView.blurView.setup(style: UIBlurEffectStyle.dark, alpha: 1).enable()
+        
+tableView.parallaxHeader.view = imageView
+tableView.parallaxHeader.height = 400
+tableView.parallaxHeader.minimumHeight = 120
+tableView.parallaxHeader.mode = .centerFill
+tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
+    //update alpha of blur view on top of image view
+    parallaxHeader.view.blurView.alpha = 1 - parallaxHeader.progress
+}
+        
+let roundIcon = UIImageView(
+    frame: CGRect(x: 0, y: 0, width: 100, height: 100)
+)
+roundIcon.image = image
+roundIcon.layer.borderColor = UIColor.white.cgColor
+roundIcon.layer.borderWidth = 2
+roundIcon.layer.cornerRadius = roundIcon.frame.width / 2
+roundIcon.clipsToBounds = true
+        
+//add round image view to blur content view
+//do not use vibrancyContentView to prevent vibrant effect
+imageView.blurView.blurContentView?.addSubview(roundIcon)
+//add constraints using SnpaKit library
+roundIcon.snp.makeConstraints { make in
+    make.center.equalToSuperview()
+    make.width.height.equalTo(100)
+}
+```
+
+## Author
+Roman Sorochak - iOS developer - roman.sorochak@gmail.com
 
 ## License
 
