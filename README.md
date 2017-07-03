@@ -13,7 +13,7 @@ Simple way to add parallax header to UIScrollView or it's subclasses.
 
 ## Requirements
 
-- iOS 9.0+
+- iOS 8.0+
 - Xcode 8.0+
 - Swift 3.0+
 
