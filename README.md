@@ -65,8 +65,6 @@ To add parallax header to scroll view (table view) you need just create view and
 ```
 
 ## Use case - slider of images
-- [SnapKit](https://github.com/SnapKit/SnapKit) library is used here.
-
 ```swift
 let parallaxHeight: CGFloat = view.frame.height - 64 - 49 - sliderHeight
 let layout = UICollectionViewFlowLayout()
