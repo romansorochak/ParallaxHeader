@@ -19,6 +19,7 @@
 		B5485F971F0277870010D77C /* CollectionDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5485F961F0277870010D77C /* CollectionDemo.gif */; };
 		B54E1B8B1EFD5AE700B1DDCE /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */; };
 		B5B4488C1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4488B1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift */; };
+		B5B4488E1F0ADC8F009FC4DA /* Demo_blur_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5B4488D1F0ADC8F009FC4DA /* Demo_blur_icon.gif */; };
 		B5CCB7971EFD0E5500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
 		B5CCB79C1EFD0E5500194CFB /* ParallaxHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB79B1EFD0E5500194CFB /* ParallaxHeaderTests.swift */; };
 		B5CCB79E1EFD0E5500194CFB /* ParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,6 +92,7 @@
 		B5485F961F0277870010D77C /* CollectionDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CollectionDemo.gif; sourceTree = "<group>"; };
 		B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
 		B5B4488B1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurRoundIconParallaxVC.swift; sourceTree = "<group>"; };
+		B5B4488D1F0ADC8F009FC4DA /* Demo_blur_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo_blur_icon.gif; sourceTree = "<group>"; };
 		B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallaxHeader.h; sourceTree = "<group>"; };
 		B5CCB7911EFD0E5400194CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				B5DB07011F02D1C900DD1D43 /* Demo_with_blur.gif */,
 				B5485F961F0277870010D77C /* CollectionDemo.gif */,
 				B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */,
+				B5B4488D1F0ADC8F009FC4DA /* Demo_blur_icon.gif */,
 				B5CCB7B41EFD0F2300194CFB /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -495,6 +498,7 @@
 				B5485F971F0277870010D77C /* CollectionDemo.gif in Resources */,
 				B5CCB7B81EFD0F2300194CFB /* LaunchScreen.storyboard in Resources */,
 				B5DB07021F02D1C900DD1D43 /* Demo_with_blur.gif in Resources */,
+				B5B4488E1F0ADC8F009FC4DA /* Demo_blur_icon.gif in Resources */,
 				B5485F951F0270F70010D77C /* CollectionTableViewCell.xib in Resources */,
 				B54E1B8B1EFD5AE700B1DDCE /* Demo.gif in Resources */,
 				B506958D1F02686900078D26 /* ItemDetailedCell.xib in Resources */,
