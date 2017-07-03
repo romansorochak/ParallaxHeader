@@ -19,7 +19,6 @@ class ParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         
         setupParallaxHeader()
-        setupImageView()
     }
     
     
@@ -38,31 +37,6 @@ class ParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.parallaxHeader.mode = .centerFill
         tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
             print(parallaxHeader.progress)
-        }
-    }
-    
-    private func setupImageView() {
-        guard let imageView = headerImageView else {
-            return
-        }
-        let tapGesture = UITapGestureRecognizer(
-            target: self,
-            action: #selector(imageDidTap(gesture:))
-        )
-        imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(tapGesture)
-    }
-    
-    
-    //MARK: actions
-    
-    @objc private func imageDidTap(gesture: UITapGestureRecognizer) {
-        UIView.animate(withDuration: 0.3) {
-            if self.tableView.parallaxHeader.height == 400 {
-                self.tableView.parallaxHeader.height = 200
-            } else {
-                self.tableView.parallaxHeader.height = 400
-            }
         }
     }
     

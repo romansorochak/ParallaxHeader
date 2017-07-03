@@ -18,6 +18,7 @@
 		B5485F951F0270F70010D77C /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5485F931F0270F70010D77C /* CollectionTableViewCell.xib */; };
 		B5485F971F0277870010D77C /* CollectionDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5485F961F0277870010D77C /* CollectionDemo.gif */; };
 		B54E1B8B1EFD5AE700B1DDCE /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */; };
+		B5B4488C1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4488B1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift */; };
 		B5CCB7971EFD0E5500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
 		B5CCB79C1EFD0E5500194CFB /* ParallaxHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCB79B1EFD0E5500194CFB /* ParallaxHeaderTests.swift */; };
 		B5CCB79E1EFD0E5500194CFB /* ParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,6 +90,7 @@
 		B5485F931F0270F70010D77C /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		B5485F961F0277870010D77C /* CollectionDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CollectionDemo.gif; sourceTree = "<group>"; };
 		B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
+		B5B4488B1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurRoundIconParallaxVC.swift; sourceTree = "<group>"; };
 		B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CCB7901EFD0E5400194CFB /* ParallaxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallaxHeader.h; sourceTree = "<group>"; };
 		B5CCB7911EFD0E5400194CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,8 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				B5DB07031F02D20F00DD1D43 /* ParallaxVC.swift */,
-				B5CCB7AF1EFD0F2300194CFB /* BlurParallaxVC.swift */,
 				B50695841F02664100078D26 /* CollectionVC */,
+				B5CCB7AF1EFD0F2300194CFB /* BlurParallaxVC.swift */,
+				B5B4488B1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B4488C1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift in Sources */,
 				B50695861F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift in Sources */,
 				B5DB07041F02D20F00DD1D43 /* ParallaxVC.swift in Sources */,
 				B50695881F0267D700078D26 /* ItemDetailedImagesDataSourse.swift in Sources */,
