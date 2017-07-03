@@ -1,9 +1,9 @@
 # ParallaxHeader
 Simple way to add parallax header to UIScrollView or it's subclasses.
 
-|             One image view      |           Slider with images              |
-|---------------------------------|-------------------------------------------|
-|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/CollectionDemo.gif)|
+|             One image view      |           Slider with images              |     Image view with blur effect           |
+|---------------------------------|-------------------------------------------|-------------------------------------------|
+|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/CollectionDemo.gif)|![Demo](https://github.com/romansorochak/ParallaxHeader/blob/master/Exmple/Demo_with_blur.gif)|
 
 ## Contents
 - [Requirements](#requirements)
