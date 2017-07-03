@@ -65,6 +65,8 @@ To add parallax header to scroll view (table view) you need just create view and
 ```
 
 ## Use case - slider of images
+- [SnapKit]https://github.com/SnapKit/SnapKit library is used here.
+
 ```swift
 let parallaxHeight: CGFloat = view.frame.height - 64 - 49 - sliderHeight
 let layout = UICollectionViewFlowLayout()
@@ -90,7 +92,8 @@ tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
 ```
 
 ## Use case - Blur vibrant text
-- Tap [here](https://github.com/romansorochak/Blur) to see more from [Blur](https://github.com/romansorochak/Blur)
+- [Blur](https://github.com/romansorochak/Blur) library is used here.
+- [SnapKit]https://github.com/SnapKit/SnapKit library is used here.
 ```swift
 let imageView = UIImageView()
 imageView.image = UIImage(named: "profile")
@@ -124,7 +127,8 @@ vibrantLabel.snp.makeConstraints { make in
 ```
 
 ## Use case - Blur round icon
-- Tap [here](https://github.com/romansorochak/Blur) to see more from [Blur](https://github.com/romansorochak/Blur)
+- [Blur](https://github.com/romansorochak/Blur) library is used here.
+- [SnapKit]https://github.com/SnapKit/SnapKit library is used here.
 ```swift
 let image = UIImage(named: "profile")
         
