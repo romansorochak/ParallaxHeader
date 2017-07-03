@@ -39,6 +39,7 @@ class BlurRoundIconParallaxVC: UIViewController, UITableViewDelegate, UITableVie
         tableView.parallaxHeader.minimumHeight = 120
         tableView.parallaxHeader.mode = .centerFill
         tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
+            //update alpha of blur view on top of image view
             parallaxHeader.view.blurView.alpha = 1 - parallaxHeader.progress
         }
         

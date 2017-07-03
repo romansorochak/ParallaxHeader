@@ -30,6 +30,7 @@ class BlurParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         imageView.image = UIImage(named: "profile")
         imageView.contentMode = .scaleAspectFill
         
+        //setup blur vibrant view
         imageView.blurView.setup(style: UIBlurEffectStyle.dark, alpha: 1).enable()
         
         headerImageView = imageView
@@ -39,7 +40,7 @@ class BlurParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.parallaxHeader.minimumHeight = 40
         tableView.parallaxHeader.mode = .centerFill
         tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
-            print(parallaxHeader.progress)
+            //update alpha of blur view on top of image view 
             parallaxHeader.view.blurView.alpha = 1 - parallaxHeader.progress
         }
         
@@ -50,6 +51,7 @@ class BlurParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         vibrantLabel.sizeToFit()
         vibrantLabel.textAlignment = .center
         imageView.blurView.vibrancyContentView?.addSubview(vibrantLabel)
+        //add constraints using SnapKit library
         vibrantLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
