@@ -90,6 +90,7 @@ tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
 ```
 
 ## Use case - Blur vibrant text
+- Tap [here](https://github.com/romansorochak/Blur) to see more from [Blur](https://github.com/romansorochak/Blur)
 ```swift
 let imageView = UIImageView()
 imageView.image = UIImage(named: "profile")
@@ -123,6 +124,7 @@ vibrantLabel.snp.makeConstraints { make in
 ```
 
 ## Use case - Blur round icon
+- Tap [here](https://github.com/romansorochak/Blur) to see more from [Blur](https://github.com/romansorochak/Blur)
 ```swift
 let image = UIImage(named: "profile")
         
