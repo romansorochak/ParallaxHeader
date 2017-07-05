@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'Exmple' do
 
-    pod 'Reusable', :git => 'https://github.com/romansorochak/Reusable.git', :tag => '1.0.0'
+    pod 'RSReusable'
     pod 'SnapKit'
 
 end
