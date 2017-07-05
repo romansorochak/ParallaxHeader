@@ -1,0 +1,25 @@
+PODS:
+  - Reusable (1.0.0)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Reusable (from `https://github.com/romansorochak/Reusable.git`, tag `1.0.0`)
+  - SnapKit
+
+EXTERNAL SOURCES:
+  Reusable:
+    :git: https://github.com/romansorochak/Reusable.git
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  Reusable:
+    :git: https://github.com/romansorochak/Reusable.git
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  Reusable: 56e8a41502551b797c428f7f0b5d60e661be55f3
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: f8cd3c4c31bb04e896224286c8b87cc33951e797
+
+COCOAPODS: 1.2.0
