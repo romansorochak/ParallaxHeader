@@ -37,7 +37,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'ParallaxHeader', :git => 'https://github.com/romansorochak/ParallaxHeader.git', :tag => '1.0.0'
+    pod 'ParallaxHeader'
 end
 ```
 
