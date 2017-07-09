@@ -173,4 +173,4 @@ Roman Sorochak - iOS developer - roman.sorochak@gmail.com
 
 ## License
 
-Reusable is released under the MIT license. See [LICENSE](https://github.com/romansorochak/ParallaxHeader/blob/master/LICENSE) for details.
+ParallaxHeader is released under the MIT license. See [LICENSE](https://github.com/romansorochak/ParallaxHeader/blob/master/LICENSE) for details.
