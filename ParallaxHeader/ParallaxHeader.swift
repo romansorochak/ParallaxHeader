@@ -270,7 +270,7 @@ public class ParallaxHeader: NSObject {
             "v" : view
         ]
         let metrics = [
-            "highPriority" : UILayoutPriorityDefaultHigh,
+            "highPriority" : UILayoutPriority.defaultHigh,
             "height" : height
             ] as [String : Any]
         contentView.addConstraints(
@@ -333,7 +333,7 @@ public class ParallaxHeader: NSObject {
             "v" : view
         ]
         let metrics = [
-            "highPriority" : UILayoutPriorityDefaultHigh,
+            "highPriority" : UILayoutPriority.defaultHigh,
             "height" : height
             ] as [String : Any]
         contentView.addConstraints(
@@ -407,7 +407,7 @@ public class ParallaxHeader: NSObject {
             "v" : view
         ]
         let metrics = [
-            "highPriority" : UILayoutPriorityDefaultHigh,
+            "highPriority" : UILayoutPriority.defaultHigh,
             "height" : height
             ] as [String : Any]
         contentView.addConstraints(
