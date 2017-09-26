@@ -39,7 +39,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'ParallaxHeader'
+    pod 'ParallaxHeader', '~> 2.0.0'
 end
 ```
 
@@ -47,6 +47,17 @@ Then, run the following command:
 
 ```bash
 $ pod install
+```
+
+## Cocoapods versions
+
+- Swift4 : 
+```swift
+pod 'ParallaxHeader', '~> 2.0.0'
+```
+- Swift3 : 
+```swift
+pod 'ParallaxHeader', '~> 1.0.6'
 ```
 
 # Usage
