@@ -52,11 +52,11 @@ $ pod install
 ## Cocoapods versions
 
 - Swift4 : 
-```swift
+```ruby
 pod 'ParallaxHeader', '~> 2.0.0'
 ```
 - Swift3 : 
-```swift
+```ruby
 pod 'ParallaxHeader', '~> 1.0.6'
 ```
 
