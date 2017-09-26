@@ -1,14 +1,14 @@
 PODS:
-  - RSReusable (1.0.10)
-  - SnapKit (3.2.0)
+  - RSReusable (1.0.12)
+  - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - RSReusable
   - SnapKit
 
 SPEC CHECKSUMS:
-  RSReusable: 516632745324ac679a4a70d3a3016432838844a3
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  RSReusable: e7888dff90fbaf01b9b01169875730be4a04e818
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
 PODFILE CHECKSUM: 3c522e1f0f4d68a6e342b12a8c2de173654d2cf8
 

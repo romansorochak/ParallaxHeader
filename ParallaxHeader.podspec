@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ParallaxHeader"
-  s.version      = "1.0.6"
+  s.version      = "2.0.0"
   s.summary      = "Simple way to add parallax header to scrollView/tableView"
   s.description  = "The ParallaxHeader allows to add parallax header to UIScrollView and it's subclasses within UIScrollView extension"
   s.homepage     = "https://github.com/romansorochak"
