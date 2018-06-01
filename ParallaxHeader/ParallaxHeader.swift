@@ -76,7 +76,7 @@ public class ParallaxHeader: NSObject {
             _scrollView = scrollView
             
             adjustScrollViewTopInset(
-                top: scrollView.contentInset.top + height
+                top: scrollView.branchedContentInset.top + height
             )
             scrollView.addSubview(contentView)
             
@@ -436,7 +436,7 @@ public class ParallaxHeader: NSObject {
             return
         }
         let minimumHeight = min(self.minimumHeight, self.height)
-        let relativeYOffset = scrollView.contentOffset.y + scrollView.contentInset.top - height
+        let relativeYOffset = scrollView.contentOffset.y + scrollView.branchedContentInset.top - height
         let relativeHeight = -relativeYOffset
         
         let frame = CGRect(
@@ -455,7 +455,7 @@ public class ParallaxHeader: NSObject {
         guard let scrollView = scrollView else {
             return
         }
-        var inset = scrollView.contentInset
+        var inset = scrollView.branchedContentInset
         
         //Adjust content offset
         var offset = scrollView.contentOffset
@@ -483,6 +483,16 @@ public class ParallaxHeader: NSObject {
         }
         if keyPath == NSStringFromSelector(#selector(getter: scrollView.contentOffset)) {
             layoutContentView()
+        }
+    }
+}
+
+fileprivate extension UIScrollView {
+    var branchedContentInset: UIEdgeInsets {
+        if #available(iOS 11.0, *) {
+            return self.adjustedContentInset
+        } else {
+            return self.contentInset
         }
     }
 }
