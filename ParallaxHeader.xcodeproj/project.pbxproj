@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		837AA184E2E3DE5C748CAC1F /* Pods_Exmple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7EB16BC67AB233D49ED31 /* Pods_Exmple.framework */; };
 		B50695821F02653C00078D26 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50695811F02653C00078D26 /* CollectionVC.swift */; };
 		B50695861F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50695851F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift */; };
 		B50695881F0267D700078D26 /* ItemDetailedImagesDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50695871F0267D700078D26 /* ItemDetailedImagesDataSourse.swift */; };
@@ -37,6 +36,7 @@
 		B5DB06DE1F028E4D00DD1D43 /* UIView+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB06DD1F028E4D00DD1D43 /* UIView+Blur.swift */; };
 		B5DB07021F02D1C900DD1D43 /* Demo_with_blur.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5DB07011F02D1C900DD1D43 /* Demo_with_blur.gif */; };
 		B5DB07041F02D20F00DD1D43 /* ParallaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB07031F02D20F00DD1D43 /* ParallaxVC.swift */; };
+		C10CB68EB839634B484CD71A /* Pods_Exmple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7EB16BC67AB233D49ED31 /* Pods_Exmple.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CCB7D21EFD109500194CFB /* ParallaxHeader.framework in Frameworks */,
-				837AA184E2E3DE5C748CAC1F /* Pods_Exmple.framework in Frameworks */,
+				C10CB68EB839634B484CD71A /* Pods_Exmple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +391,6 @@
 				B5CCB7A91EFD0F2300194CFB /* Resources */,
 				B5CCB7D61EFD109500194CFB /* Embed Frameworks */,
 				DB2BD7ED3ABE8A85C94D31F6 /* [CP] Embed Pods Frameworks */,
-				383E94231D2D333DBB6D5C66 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -433,7 +432,6 @@
 				TargetAttributes = {
 					B5CCB78C1EFD0E5400194CFB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = SWXVWAU9H9;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -444,7 +442,7 @@
 					};
 					B5CCB7AA1EFD0F2300194CFB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = SWXVWAU9H9;
+						DevelopmentTeam = 23CVKL3DB9;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -535,21 +533,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		383E94231D2D333DBB6D5C66 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Exmple/Pods-Exmple-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB2BD7ED3ABE8A85C94D31F6 /* [CP] Embed Pods Frameworks */ = {
@@ -778,7 +761,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SWXVWAU9H9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -791,7 +774,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -802,7 +785,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SWXVWAU9H9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -814,7 +797,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -851,14 +834,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SWXVWAU9H9;
+				DEVELOPMENT_TEAM = 23CVKL3DB9;
 				INFOPLIST_FILE = Exmple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magiclab.Exmple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -868,14 +851,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SWXVWAU9H9;
+				DEVELOPMENT_TEAM = 23CVKL3DB9;
 				INFOPLIST_FILE = Exmple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magiclab.Exmple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
