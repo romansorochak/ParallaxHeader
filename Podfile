@@ -5,6 +5,6 @@ use_frameworks!
 target 'Exmple' do
 
     pod 'RSReusable'
-    pod 'SnapKit'
+    pod 'SnapKit', '4.0.0'
 
 end
