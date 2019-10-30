@@ -308,7 +308,7 @@ public class ParallaxHeader: NSObject {
             NSLayoutConstraint(
                 item: view,
                 attribute: NSLayoutConstraint.Attribute.centerY,
-                relatedBy: NSLayoutRelation.equal,
+                relatedBy: NSLayoutConstraint.Relation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerY,
                 multiplier: 1,
@@ -319,7 +319,7 @@ public class ParallaxHeader: NSObject {
             NSLayoutConstraint(
                 item: view,
                 attribute: NSLayoutConstraint.Attribute.centerX,
-                relatedBy: NSLayoutRelation.equal,
+                relatedBy: NSLayoutConstraint.Relation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerX,
                 multiplier: 1,
@@ -357,7 +357,7 @@ public class ParallaxHeader: NSObject {
             NSLayoutConstraint(
                 item: view,
                 attribute: NSLayoutConstraint.Attribute.centerY,
-                relatedBy: NSLayoutRelation.equal,
+                relatedBy: NSLayoutConstraint.Relation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerY,
                 multiplier: 1,
@@ -368,7 +368,7 @@ public class ParallaxHeader: NSObject {
             NSLayoutConstraint(
                 item: view,
                 attribute: NSLayoutConstraint.Attribute.centerX,
-                relatedBy: NSLayoutRelation.equal,
+                relatedBy: NSLayoutConstraint.Relation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerX,
                 multiplier: 1,
