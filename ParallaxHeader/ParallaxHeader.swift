@@ -14,8 +14,8 @@ public typealias ParallaxHeaderHandlerBlock = (_ parallaxHeader: ParallaxHeader)
 
 
 private let parallaxHeaderKVOContext = UnsafeMutableRawPointer.allocate(
-    bytes: 4,
-    alignedTo: 1
+    byteCount: 4,
+    alignment: 1
 )
 
 class ParallaxView: UIView {
@@ -225,7 +225,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -233,7 +233,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "V:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -250,7 +250,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -258,7 +258,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "V:|[v(==height)]",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: metrics,
                 views: binding
             )
@@ -276,7 +276,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -284,7 +284,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "V:|[v(>=height)]-0.0@highPriority-|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: metrics,
                 views: binding
             )
@@ -298,7 +298,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -307,7 +307,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraint(
             NSLayoutConstraint(
                 item: view,
-                attribute: NSLayoutAttribute.centerY,
+                attribute: NSLayoutConstraint.Attribute.centerY,
                 relatedBy: NSLayoutRelation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerY,
@@ -318,7 +318,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraint(
             NSLayoutConstraint(
                 item: view,
-                attribute: NSLayoutAttribute.centerX,
+                attribute: NSLayoutConstraint.Attribute.centerX,
                 relatedBy: NSLayoutRelation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerX,
@@ -339,7 +339,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -347,7 +347,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "V:|-0@highPriority-[v(>=height)]-0@highPriority-|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: metrics,
                 views: binding
             )
@@ -356,7 +356,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraint(
             NSLayoutConstraint(
                 item: view,
-                attribute: NSLayoutAttribute.centerY,
+                attribute: NSLayoutConstraint.Attribute.centerY,
                 relatedBy: NSLayoutRelation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerY,
@@ -367,7 +367,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraint(
             NSLayoutConstraint(
                 item: view,
-                attribute: NSLayoutAttribute.centerX,
+                attribute: NSLayoutConstraint.Attribute.centerX,
                 relatedBy: NSLayoutRelation.equal,
                 toItem: contentView,
                 attribute: NSLayoutAttribute.centerX,
@@ -387,7 +387,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -395,7 +395,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "V:[v(==height)]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: metrics,
                 views: binding
             )
@@ -413,7 +413,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[v]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: nil,
                 views: binding
             )
@@ -421,7 +421,7 @@ public class ParallaxHeader: NSObject {
         contentView.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "V:|-0.0@highPriority-[v(>=height)]|",
-                options: NSLayoutFormatOptions(rawValue: 0),
+                options: NSLayoutConstraint.FormatOptions(rawValue: 0),
                 metrics: metrics,
                 views: binding
             )
