@@ -15,14 +15,18 @@ class ParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     weak var headerImageView: UIView?
     
+    
+    //MARK: - life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupParallaxHeader()
+        setupNavBar()
     }
     
     
-    //MARK: private
+    //MARK: - private
     
     private func setupParallaxHeader() {
         let imageView = UIImageView()
@@ -38,6 +42,24 @@ class ParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.parallaxHeader.parallaxHeaderDidScrollHandler = { parallaxHeader in
             print(parallaxHeader.progress)
         }
+    }
+    
+    
+    //MARK: - nav bar
+    
+    private func setupNavBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Push me",
+            style: UIBarButtonItem.Style.plain,
+            target: self,
+            action: #selector(rightBarButtonAction)
+        )
+    }
+    
+    @objc private func rightBarButtonAction() {
+        let navC = UINavigationController(rootViewController: FromCodeCollectionVC())
+        navC.modalPresentationStyle = .fullScreen
+        present(navC, animated: true, completion: nil)
     }
     
     
