@@ -72,6 +72,7 @@ class FromCodeCollectionVC: UIViewController {
         title = "Collection from code"
         collectionView.isHidden = false
         setupParallaxHeader()
+        setupNavBar()
     }
     
     
@@ -108,6 +109,21 @@ class FromCodeCollectionVC: UIViewController {
         vibrantLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+    
+    
+    //MARK: - nav bar
+    
+    private func setupNavBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .done,
+            target: self,
+            action: #selector(doneAction)
+        )
+    }
+    
+    @objc private func doneAction() {
+        dismiss(animated: true, completion: nil)
     }
 }
 
