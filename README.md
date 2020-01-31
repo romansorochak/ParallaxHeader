@@ -31,7 +31,7 @@ $ gem install cocoapods
 
 > CocoaPods 1.1.0+ is required to build Reusable 1.0.0+.
 
-To integrate Reusable into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate ParallaxHeader into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -39,7 +39,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'ParallaxHeader', '~> 2.0.0'
+    pod 'ParallaxHeader', '~> 3.0.0'
 end
 ```
 
@@ -51,6 +51,10 @@ $ pod install
 
 ## Cocoapods versions
 
+- Swift5 : 
+```ruby
+pod 'ParallaxHeader', '~> 3.0.0'
+```
 - Swift4 : 
 ```ruby
 pod 'ParallaxHeader', '~> 2.0.0'
