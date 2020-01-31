@@ -39,7 +39,7 @@ class CollectionVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     private func setupParallaxHeader() {
         //height for header without navigation bar & tab bar
         //& first cell with horizontal slider
-        let parallaxHeight: CGFloat = view.frame.height - 64 - 49 - sliderHeight
+        let parallaxHeight: CGFloat = view.frame.height - Constants.Numbers.navBarHeight - Constants.Numbers.tabBarHeight - sliderHeight
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         collectionParallaxView = UICollectionView(

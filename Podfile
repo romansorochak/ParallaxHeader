@@ -6,5 +6,6 @@ target 'Exmple' do
 
     pod 'RSReusable'
     pod 'SnapKit'
+    pod 'Device'
 
 end

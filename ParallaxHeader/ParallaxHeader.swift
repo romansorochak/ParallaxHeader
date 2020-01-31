@@ -95,7 +95,7 @@ public class ParallaxHeader: NSObject {
             }
             let contentView = ParallaxView()
             contentView.parent = self
-            contentView.clipsToBounds = false
+            contentView.clipsToBounds = true
             
             _contentView = contentView
             

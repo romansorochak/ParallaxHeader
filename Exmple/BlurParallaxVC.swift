@@ -32,6 +32,7 @@ class BlurParallaxVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //setup blur vibrant view
         imageView.blurView.setup(style: UIBlurEffect.Style.dark, alpha: 1).enable()
+        imageView.blurView.alpha = 0
         
         headerImageView = imageView
         

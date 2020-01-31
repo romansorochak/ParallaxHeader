@@ -18,6 +18,8 @@
 		B5485F951F0270F70010D77C /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5485F931F0270F70010D77C /* CollectionTableViewCell.xib */; };
 		B5485F971F0277870010D77C /* CollectionDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5485F961F0277870010D77C /* CollectionDemo.gif */; };
 		B54E1B8B1EFD5AE700B1DDCE /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */; };
+		B585B75623E4B8F2001EA7BE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585B75523E4B8F2001EA7BE /* Device.swift */; };
+		B585B75823E4B927001EA7BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585B75723E4B927001EA7BE /* Constants.swift */; };
 		B5B4488C1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4488B1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift */; };
 		B5B4488E1F0ADC8F009FC4DA /* Demo_blur_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5B4488D1F0ADC8F009FC4DA /* Demo_blur_icon.gif */; };
 		B5CCB7971EFD0E5500194CFB /* ParallaxHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */; };
@@ -91,6 +93,8 @@
 		B5485F931F0270F70010D77C /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		B5485F961F0277870010D77C /* CollectionDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CollectionDemo.gif; sourceTree = "<group>"; };
 		B54E1B8A1EFD5AE700B1DDCE /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
+		B585B75523E4B8F2001EA7BE /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		B585B75723E4B927001EA7BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5B4488B1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurRoundIconParallaxVC.swift; sourceTree = "<group>"; };
 		B5B4488D1F0ADC8F009FC4DA /* Demo_blur_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo_blur_icon.gif; sourceTree = "<group>"; };
 		B5CCB78D1EFD0E5400194CFB /* ParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +191,7 @@
 			children = (
 				B5485F8C1F0269D40010D77C /* UIAplication+RLT.swift */,
 				B5DB06DD1F028E4D00DD1D43 /* UIView+Blur.swift */,
+				B585B75523E4B8F2001EA7BE /* Device.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				B5CCB7AD1EFD0F2300194CFB /* AppDelegate.swift */,
+				B585B75723E4B927001EA7BE /* Constants.swift */,
 				B50695831F02662700078D26 /* VC */,
 				B54E1B891EFD5A9C00B1DDCE /* UI */,
 				B5485F8B1F0269C90010D77C /* Extensions */,
@@ -390,7 +396,7 @@
 				B5CCB7A81EFD0F2300194CFB /* Frameworks */,
 				B5CCB7A91EFD0F2300194CFB /* Resources */,
 				B5CCB7D61EFD109500194CFB /* Embed Frameworks */,
-				DB2BD7ED3ABE8A85C94D31F6 /* [CP] Embed Pods Frameworks */,
+				FA52BC5BE797077A6CCC1662 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -536,18 +542,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB2BD7ED3ABE8A85C94D31F6 /* [CP] Embed Pods Frameworks */ = {
+		FA52BC5BE797077A6CCC1662 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Exmple/Pods-Exmple-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
 				"${BUILT_PRODUCTS_DIR}/RSReusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -584,9 +592,11 @@
 				B5B4488C1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift in Sources */,
 				B50695861F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift in Sources */,
 				B5DB07041F02D20F00DD1D43 /* ParallaxVC.swift in Sources */,
+				B585B75623E4B8F2001EA7BE /* Device.swift in Sources */,
 				B50695881F0267D700078D26 /* ItemDetailedImagesDataSourse.swift in Sources */,
 				B5CCB7B01EFD0F2300194CFB /* BlurParallaxVC.swift in Sources */,
 				B5CCB7AE1EFD0F2300194CFB /* AppDelegate.swift in Sources */,
+				B585B75823E4B927001EA7BE /* Constants.swift in Sources */,
 				B506958B1F02686000078D26 /* ItemDetailedCell.swift in Sources */,
 				B5DB06DE1F028E4D00DD1D43 /* UIView+Blur.swift in Sources */,
 				B50695821F02653C00078D26 /* CollectionVC.swift in Sources */,

@@ -1,0 +1,6 @@
+framework module Device {
+  umbrella header "Device-umbrella.h"
+
+  export *
+  module * { export * }
+}

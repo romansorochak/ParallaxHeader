@@ -33,6 +33,7 @@ class BlurRoundIconParallaxVC: UIViewController, UITableViewDelegate, UITableVie
         
         //setup bur view
         imageView.blurView.setup(style: UIBlurEffect.Style.dark, alpha: 1).enable()
+        imageView.blurView.alpha = 0
         
         tableView.parallaxHeader.view = imageView
         tableView.parallaxHeader.height = 400
