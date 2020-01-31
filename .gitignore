@@ -65,3 +65,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+# XCUser data
+ParallaxHeader.xcworkspace/xcshareddata/
+ParallaxHeader.xcworkspace/xcshareddata/*
