@@ -436,10 +436,7 @@ public class ParallaxHeader: NSObject {
             return
         }
         let minimumHeight = min(self.minimumHeight, self.height)
-        var relativeYOffset = scrollView.contentOffset.y + scrollView.contentInset.top - height
-        if #available(iOS 11.0, *) {
-            relativeYOffset += scrollView.safeAreaInsets.top
-        }
+        let relativeYOffset = scrollView.contentOffset.y + scrollView.contentInset.top - height
         let relativeHeight = -relativeYOffset
         
         let frame = CGRect(
