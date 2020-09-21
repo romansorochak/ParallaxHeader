@@ -14,8 +14,8 @@ public typealias ParallaxHeaderHandlerBlock = (_ parallaxHeader: ParallaxHeader)
 
 
 private let parallaxHeaderKVOContext = UnsafeMutableRawPointer.allocate(
-    bytes: 4,
-    alignedTo: 1
+    byteCount: 4,
+    alignment: 1
 )
 
 class ParallaxView: UIView {
