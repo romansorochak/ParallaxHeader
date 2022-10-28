@@ -63,6 +63,10 @@ public class ParallaxHeader: NSObject {
      */
     public var parallaxHeaderDidScrollHandler: ParallaxHeaderHandlerBlock?
     
+    /// This is to support a usecase where a parallax header is being used at the very top edge of the screen.
+    /// If this is set to true then the header will be pinned at the top of the scrollView. Default value is `false`
+    public var ignoreTopSafeAreaInset:Bool = false
+    
     private weak var _scrollView: UIScrollView?
     var scrollView: UIScrollView! {
         get {
@@ -438,7 +442,9 @@ public class ParallaxHeader: NSObject {
         let minimumHeight = min(self.minimumHeight, self.height)
         var relativeYOffset = scrollView.contentOffset.y + scrollView.contentInset.top - height
         if #available(iOS 11.0, *) {
-            relativeYOffset += scrollView.safeAreaInsets.top
+            if !ignoreTopSafeAreaInset {
+                relativeYOffset += scrollView.safeAreaInsets.top
+            }
         }
         let relativeHeight = -relativeYOffset
         
